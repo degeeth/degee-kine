@@ -1,0 +1,71 @@
+/* Effects that can't be expressed cleanly with Tailwind utilities alone */
+
+/* Gradient clip text — warm green → amber */
+.gradient-text {
+  background: linear-gradient(135deg, #3d8b5c 0%, #d4a040 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section-label {
+  background: linear-gradient(135deg, #52b077, #d4a040);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Warm hero overlay — peach + green radials */
+.hero-overlay {
+  background:
+    radial-gradient(ellipse 55% 55% at 8%  88%, rgba(232,134,90,.32) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 88% 12%, rgba(61,139,92,.32)  0%, transparent 65%),
+    linear-gradient(160deg, rgba(18,28,14,.84) 0%, rgba(38,68,28,.60) 100%);
+}
+
+/* Navbar scroll state */
+#navbar { transition: background .35s ease, box-shadow .35s ease; }
+#navbar.scrolled { background: rgba(253,252,249,.97); box-shadow: 0 1px 10px rgba(61,139,92,.12); }
+#navbar.scrolled .nav-link { color: #7a6152 !important; background: transparent !important; }
+#navbar.scrolled .nav-link:hover,
+#navbar.scrolled .nav-link.active { color: #3d8b5c !important; background: #edf7f1 !important; }
+
+/* Scroll-triggered fade-up */
+.fade-up { opacity: 0; transform: translateY(28px); transition: opacity .65s cubic-bezier(.4,0,.2,1), transform .65s cubic-bezier(.4,0,.2,1); }
+.fade-up.visible  { opacity: 1; transform: none; }
+.fade-up.delay-1  { transition-delay: .13s; }
+.fade-up.delay-2  { transition-delay: .26s; }
+
+/* Formation card entrance + hover */
+.formation-card {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .5s cubic-bezier(.4,0,.2,1), transform .5s cubic-bezier(.4,0,.2,1), box-shadow .28s;
+}
+.formation-card.visible        { opacity: 1; transform: translateY(0); }
+.formation-card.visible:hover  { transform: translateY(-5px); }
+.formation-card::after {
+  content: attr(data-year);
+  position: absolute; bottom: -12px; right: 10px;
+  font-size: 5.5rem; font-weight: 900; line-height: 1; letter-spacing: -0.04em;
+  color: var(--card-color, #3d8b5c);
+  opacity: .07;
+  pointer-events: none; user-select: none;
+}
+
+/* Carousel active dot */
+.carousel-dot.active { background: white !important; transform: scale(1.4); }
+
+/* Mobile nav */
+@media (max-width: 640px) {
+  #navToggle { display: flex !important; }
+  #navLinks {
+    display: none; flex-direction: column; gap: 2px;
+    position: absolute; top: 68px; left: 0; right: 0;
+    background: #fdfcf9; padding: 10px 12px 16px;
+    box-shadow: 0 6px 24px rgba(61,139,92,.12);
+  }
+  #navLinks.open { display: flex; }
+  #navLinks .nav-link { color: #7a6152 !important; background: transparent !important; border-radius: 10px; padding: 10px 16px; }
+  #navLinks .nav-link:hover,
+  #navLinks .nav-link.active { color: #3d8b5c !important; background: #edf7f1 !important; }
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kinésithérapeute · Degée Sophie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="css/modern.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ─── Navbar ──────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"       class="nav-link active">Accueil</a></li>
+        <li><a href="#cabinet"    class="nav-link">Cabinet</a></li>
+        <li><a href="#formations" class="nav-link">Formations</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ────────────────────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-bg" style="background-image: url('./img/cabinet/home.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+
+      <div class="hero-text fade-up">
+        <span class="hero-label">Kinésithérapeute</span>
+        <h1>Degée Sophie</h1>
+        <p class="hero-specialty">Neurologie adulte &amp; rééducation ATM</p>
+        <p class="hero-location">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Huy et alentours
+        </p>
+        <a href="#contact" class="btn-primary">
+          Prendre rendez-vous
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-card fade-up delay-1">
+        <h3>Informations pratiques</h3>
+        <ul class="info-list">
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </span>
+            <span>Consultations sur rendez-vous au cabinet et à domicile</span>
+          </li>
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>Lotissement du Bois des Rois 76, 4500 Huy</span>
+          </li>
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>0479 84 75 46</span>
+          </li>
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <span>sophiedegee@hotmail.fr</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Main ─────────────────────────────────────────── -->
+  <main>
+
+    <!-- Cabinet -->
+    <section id="cabinet" class="section">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="section-label">Le cabinet</span>
+          <h2 class="section-title">Présentation du cabinet</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="cabinet-grid">
+          <div class="carousel fade-up">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-slide"><img src="./img/cabinet/1.jpg" alt="Cabinet – photo 1"></div>
+              <div class="carousel-slide"><img src="./img/cabinet/2.jpg" alt="Cabinet – photo 2"></div>
+              <div class="carousel-slide"><img src="./img/cabinet/3.jpg" alt="Cabinet – photo 3"></div>
+            </div>
+            <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Précédent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Suivant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots">
+              <button class="carousel-dot active" aria-label="Photo 1"></button>
+              <button class="carousel-dot" aria-label="Photo 2"></button>
+              <button class="carousel-dot" aria-label="Photo 3"></button>
+            </div>
+          </div>
+          <div class="cabinet-text fade-up delay-1">
+            <p>Diplômée depuis juin 2012, j'ai débuté mon expérience de kinésithérapeute au sein du CNRF (Centre neurologique et de réadaptation fonctionnelle de Fraiture-en-Condroz) et dans un cabinet privé de la région Sprimontoise.</p>
+            <p>Le cabinet au Bois des rois (Ben-Ahin) est opérationnel depuis avril 2016.</p>
+            <p>Finalement, en novembre 2018, je me suis décidée à ne me consacrer qu'aux soins en cabinet et au domicile des patients.</p>
+            <p>Le cabinet se veut familial et convivial. D'ailleurs, chaque patient est pris en charge individuellement.</p>
+            <p>J'apprécie me tenir informée de l'évolution des traitements et de leurs nouvelles perspectives ; je suis constamment en quête de nouvelles techniques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formations -->
+    <section id="formations" class="section section-alt">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="section-label">Parcours</span>
+          <h2 class="section-title">Formations</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="timeline-list fade-up delay-1">
+
+          <div class="timeline-item">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">Bruxisme et ATM</h3>
+            <p class="timeline-org">Kineform</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">Rééducation maxillo-faciale : dysfonctions temporo-mandibulaires et thérapie myofonctionnelle</h3>
+            <p class="timeline-org">KYMO / Thierry Gouzland</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2023</span>
+            <h3 class="timeline-title">Nouvelle approche rééducative des pathologies du complexe oro-facial et de l'ATM</h3>
+            <p class="timeline-org">SFER</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2022</span>
+            <h3 class="timeline-title">Kinésithérapie cervico-maxillo-faciale</h3>
+            <p class="timeline-org">Forthema / Pitance Laurent</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2021</span>
+            <h3 class="timeline-title">Rééducation de l'articulation temporo-mandibulaire</h3>
+            <p class="timeline-org">ETMA</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2017</span>
+            <h3 class="timeline-title">Rééducation du membre inférieur amputé</h3>
+            <p class="timeline-org">CREA-HELB</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2017</span>
+            <h3 class="timeline-title">Rééducation raisonnée de l'épaule</h3>
+            <p class="timeline-org">SOFCOK</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2014–2016</span>
+            <h3 class="timeline-title">Master universitaire en Neurologie Adulte</h3>
+            <p class="timeline-org">UCL</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2014</span>
+            <h3 class="timeline-title">Prise en charge globale du patient hémiplégique</h3>
+            <p class="timeline-org">SFER</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2014</span>
+            <h3 class="timeline-title">Pratiques aquatiques des bébés</h3>
+            <p class="timeline-org">La Source</p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-year">2008–2012</span>
+            <h3 class="timeline-title">Master en kinésithérapie</h3>
+            <p class="timeline-org">HEPL</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="section-label">Rendez-vous</span>
+          <h2 class="section-title">Contact et rendez-vous</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-grid fade-up delay-1">
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>Par téléphone</h3>
+            <a href="tel:+32479847546" class="contact-phone">0479 84 75 46</a>
+            <p>Lundi – vendredi, 9h à 18h</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Par email</h3>
+            <a href="mailto:sophiedegee@hotmail.fr" class="contact-email">sophiedegee@hotmail.fr</a>
+            <p>Réponse sous 24 – 48h</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Adresse</h3>
+            <p class="contact-address">Lotissement du Bois des Rois 76<br>4500 Huy (Ben-Ahin)</p>
+          </div>
+
+        </div>
+        <p class="contact-note fade-up delay-2">
+          Prise de rendez-vous <strong>UNIQUEMENT</strong> par téléphone. N'hésitez pas à laisser vos coordonnées sur la messagerie — je reprends contact dès que je suis disponible.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ───────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <p class="footer-name">Degée Sophie · Kinésithérapeute</p>
+      <p class="footer-copy">© 2026 · Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

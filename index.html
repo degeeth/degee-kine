@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>degee-kine — Versions</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #f5f6fa;
+      color: #1a1a2e;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1a1a2e;
+    }
+
+    header h1 span {
+      color: #0d9488;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #6b7280;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      transition: box-shadow .2s, transform .2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+      transform: translateY(-3px);
+    }
+
+    .card-accent {
+      height: 6px;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 99px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .badge-vanilla { background: #e0f2f1; color: #0d9488; }
+    .badge-tailwind { background: #ede9fe; color: #7c3aed; }
+
+    .card-dir {
+      font-size: 0.78rem;
+      font-family: monospace;
+      color: #9ca3af;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: #4b5563;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+
+    .card-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid #f3f4f6;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+
+    .btn:hover { opacity: .85; }
+
+    /* Accent colors per version */
+    .v1 .card-accent { background: #0d9488; }
+    .v1 .btn { background: #0d9488; color: #fff; }
+
+    .v2 .card-accent { background: linear-gradient(90deg, #0d9488, #7c3aed); }
+    .v2 .btn { background: linear-gradient(90deg, #0d9488, #7c3aed); color: #fff; }
+
+    .v3 .card-accent { background: linear-gradient(90deg, #0d9488, #7c3aed); }
+    .v3 .btn { background: linear-gradient(90deg, #0d9488, #7c3aed); color: #fff; }
+
+    .v4 .card-accent { background: linear-gradient(90deg, #0ea5e9, #7c3aed); }
+    .v4 .btn { background: linear-gradient(90deg, #0ea5e9, #7c3aed); color: #fff; }
+
+    .v5 .card-accent { background: linear-gradient(90deg, #3d8b5c, #e8865a); }
+    .v5 .btn { background: linear-gradient(90deg, #3d8b5c, #e8865a); color: #fff; }
+
+    .v6 .card-accent { background: linear-gradient(90deg, #3d8b5c, #e8865a); }
+    .v6 .btn { background: linear-gradient(90deg, #3d8b5c, #e8865a); color: #fff; }
+
+    .v7 .card-accent { background: linear-gradient(90deg, #3d8b5c, #d4a040, #e8865a); }
+    .v7 .btn { background: linear-gradient(90deg, #3d8b5c, #d4a040); color: #fff; }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>degee-<span>kine</span></h1>
+    <p>Site de Sophie Degée, kinésithérapeute à Huy — sélectionnez une version</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card v1">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-vanilla">Vanilla</span>
+          <span class="card-dir">vanilla/</span>
+        </div>
+        <div class="card-title">V1 — Épuré &amp; professionnel</div>
+        <div class="card-desc">Design minimaliste, palette teal sobre. Navbar transparente au scroll, timeline verticale pour les formations, carousel photos.</div>
+        <div class="card-tags">
+          <span class="tag">Teal sobre</span>
+          <span class="tag">Timeline</span>
+          <span class="tag">Carousel</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="vanilla/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+    <div class="card v2">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-vanilla">Vanilla</span>
+          <span class="card-dir">vanilla-v2/</span>
+        </div>
+        <div class="card-title">V2 — Coloré &amp; vivant</div>
+        <div class="card-desc">Gradients teal → violet sur les titres. Hero double radial, grille de cartes formations 5 couleurs avec grande année en filigrane.</div>
+        <div class="card-tags">
+          <span class="tag">Gradients</span>
+          <span class="tag">Cartes formations</span>
+          <span class="tag">Animations</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="vanilla-v2/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+    <div class="card v3">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-vanilla">Vanilla</span>
+          <span class="card-dir">vanilla-v3/</span>
+        </div>
+        <div class="card-title">V3 — V2 + Maps &amp; SEO</div>
+        <div class="card-desc">Identique à V2, enrichie de Google Maps intégré dans la section Contact et de balises SEO / Open Graph pour la mise en ligne.</div>
+        <div class="card-tags">
+          <span class="tag">Google Maps</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Open Graph</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="vanilla-v3/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+    <div class="card v4">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-tailwind">Tailwind</span>
+          <span class="card-dir">tailwind/</span>
+        </div>
+        <div class="card-title">V4 — V2 en Tailwind CSS</div>
+        <div class="card-desc">Même direction artistique que V2, réimplémentée avec Tailwind CSS CDN. ~95 % des styles en classes utilitaires, sans étape de build.</div>
+        <div class="card-tags">
+          <span class="tag">Tailwind CDN</span>
+          <span class="tag">Utilitaires</span>
+          <span class="tag">Gradients</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="tailwind/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+    <div class="card v5">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-tailwind">Tailwind</span>
+          <span class="card-dir">tailwind-v2/</span>
+        </div>
+        <div class="card-title">V5 — Familial &amp; chaleureux</div>
+        <div class="card-desc">Police Nunito, palette vert doux + pêche + doré sur fond crème. Badge « Cabinet familial », vague SVG en pied de hero, tons chauds.</div>
+        <div class="card-tags">
+          <span class="tag">Nunito</span>
+          <span class="tag">Tons chauds</span>
+          <span class="tag">Vague SVG</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="tailwind-v2/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+    <div class="card v6">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-tailwind">Tailwind</span>
+          <span class="card-dir">tailwind-v3/</span>
+        </div>
+        <div class="card-title">V6 — V5 + Maps &amp; SEO</div>
+        <div class="card-desc">Identique à V5, enrichie de Google Maps intégré dans la section Contact et de balises SEO / Open Graph pour la mise en ligne.</div>
+        <div class="card-tags">
+          <span class="tag">Google Maps</span>
+          <span class="tag">SEO</span>
+          <span class="tag">Open Graph</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="tailwind-v3/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+    <div class="card v7">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="badge badge-tailwind">Tailwind</span>
+          <span class="card-dir">tailwind-v4/</span>
+        </div>
+        <div class="card-title">V7 — V6 enrichie</div>
+        <div class="card-desc">Section Spécialités dédiée, FAQ accordéon, compteurs animés, swipe mobile, bouton d'appel flottant, horaires structurés et Schema.org.</div>
+        <div class="card-tags">
+          <span class="tag">Spécialités</span>
+          <span class="tag">FAQ</span>
+          <span class="tag">Compteurs</span>
+          <span class="tag">Schema.org</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a class="btn" href="tailwind-v4/index.html" target="_blank">Voir la version →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    degee-kine · 6 versions · ouvrir <code>index.html</code> de chaque dossier suffit
+  </footer>
+
+</body>
+</html>
