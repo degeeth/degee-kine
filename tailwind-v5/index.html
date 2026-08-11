@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Degée Sophie · Kinésithérapeute à Huy</title>
+  <meta name="description" content="Cabinet de kinésithérapie de Degée Sophie à Huy (Ben-Ahin). Spécialisée en neurologie adulte et rééducation temporo-mandibulaire (ATM). Consultations au cabinet et à domicile.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Degée Sophie · Kinésithérapeute à Huy">
+  <meta property="og:description" content="Cabinet familial et convivial à Ben-Ahin. Neurologie adulte, rééducation ATM, consultations au cabinet et à domicile.">
+  <meta property="og:image"       content="./img/cabinet/home.jpg">
+  <meta property="og:locale"      content="fr_BE">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233d8b5c'/><path d='M16 24s-9-5.5-9-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-9 11-9 11z' fill='white'/></svg>">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Degée Sophie · Kinésithérapeute",
+    "description": "Cabinet de kinésithérapie spécialisé en neurologie adulte et rééducation temporo-mandibulaire (ATM). Consultations au cabinet et à domicile.",
+    "telephone": "+32479847546",
+    "email": "sophiedegee@hotmail.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lotissement du Bois des Rois 76",
+      "addressLocality": "Huy",
+      "addressRegion": "Liège",
+      "postalCode": "4500",
+      "addressCountry": "BE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.5155,
+      "longitude": 5.2248
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "medicalSpecialty": ["Neurological","PhysicalTherapy"],
+    "image": "./img/cabinet/home.jpg",
+    "priceRange": "€€"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Nunito', 'system-ui', '-apple-system', 'sans-serif'] },
+          colors: {
+            primary: { DEFAULT: '#3d8b5c', light: '#52b077', pale: '#edf7f1' },
+            warm:    { DEFAULT: '#e8865a', pale: '#fdf1ec' },
+          },
+        }
+      }
+    }
+  </script>
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-[#f7f4ef] text-[#25302a] antialiased font-sans">
+
+  <!-- Skip to content -->
+  <a href="#cabinet" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999] focus:bg-white focus:text-primary focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold focus:shadow-lg">
+    Aller au contenu principal
+  </a>
+
+  <!-- ─── Navbar ──────────────────────────────────────── -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 h-[68px]">
+    <div class="flex items-center justify-end h-full max-w-[1100px] mx-auto px-6 gap-1">
+      <button id="navToggle" class="hidden flex-col gap-[5px] p-1.5 bg-transparent border-0 cursor-pointer" aria-label="Menu" aria-expanded="false">
+        <span class="block w-[22px] h-0.5 bg-white rounded-sm transition-all duration-300"></span>
+        <span class="block w-[22px] h-0.5 bg-white rounded-sm transition-all duration-300"></span>
+        <span class="block w-[22px] h-0.5 bg-white rounded-sm transition-all duration-300"></span>
+      </button>
+      <ul class="flex gap-1" id="navLinks">
+        <li><a href="#home"        class="nav-link active text-white/80 hover:text-white hover:bg-white/[0.13] px-4 py-2 rounded-full text-sm font-semibold transition-all">Accueil</a></li>
+        <li><a href="#cabinet"     class="nav-link text-white/80 hover:text-white hover:bg-white/[0.13] px-4 py-2 rounded-full text-sm font-semibold transition-all">Cabinet</a></li>
+        <li><a href="#specialites" class="nav-link text-white/80 hover:text-white hover:bg-white/[0.13] px-4 py-2 rounded-full text-sm font-semibold transition-all">Spécialités</a></li>
+        <li><a href="#formations"  class="nav-link text-white/80 hover:text-white hover:bg-white/[0.13] px-4 py-2 rounded-full text-sm font-semibold transition-all">Formations</a></li>
+        <li><a href="#contact"     class="nav-link text-white/80 hover:text-white hover:bg-white/[0.13] px-4 py-2 rounded-full text-sm font-semibold transition-all">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ────────────────────────────────────────── -->
+  <section id="home" class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./img/cabinet/home.jpg')"></div>
+    <div class="hero-overlay absolute inset-0"></div>
+
+    <div class="relative z-10 w-full max-w-[1100px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1fr_356px] gap-12 items-center" style="padding-top:calc(68px + 56px); padding-bottom:120px">
+
+      <!-- Text -->
+      <div class="fade-up">
+        <span class="inline-flex items-center gap-2 text-[10px] font-bold tracking-[.15em] uppercase text-white/75 bg-white/[.12] backdrop-blur-sm border border-white/[.18] rounded-full px-4 py-1.5 mb-6">
+          <svg class="w-3 h-3 shrink-0" viewBox="0 0 24 24" fill="#e8a84b"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          Cabinet familial &amp; convivial
+        </span>
+        <span class="block text-[11px] font-extrabold tracking-[.18em] uppercase text-white/55 mb-3">Kinésithérapeute</span>
+        <h1 class="text-white font-black leading-[1.06] tracking-tight mb-4" style="font-size:clamp(2.2rem,5vw,3.6rem)">Degée Sophie</h1>
+        <p class="text-lg italic text-white/[.72] mb-2">Rééducation temporo-mandibulaire et Neurologie adulte</p>
+        <p class="flex items-center gap-2 text-sm text-white/50 mb-11">
+          <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Huy et alentours
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 text-white text-sm font-bold px-[26px] py-[14px] rounded-full transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5" style="background:linear-gradient(135deg,#52b077,#d4a040);box-shadow:0 4px 20px rgba(61,139,92,.4)">
+            Prendre rendez-vous
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+          <a href="#specialites" class="inline-flex items-center gap-2 text-white/80 text-sm font-semibold px-[26px] py-[14px] rounded-full border border-white/25 backdrop-blur-sm transition-all duration-200 hover:bg-white/10 hover:text-white">
+            Nos spécialités
+          </a>
+        </div>
+      </div>
+
+      <!-- Info card -->
+      <div class="fade-up delay-1 rounded-[22px] p-8 backdrop-blur-xl" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2)">
+        <h3 class="text-[11px] font-bold tracking-[.1em] uppercase text-white/50 mb-5 pb-3" style="border-bottom:1px solid rgba(255,255,255,.12)">Informations pratiques</h3>
+        <ul class="flex flex-col gap-4">
+          <li class="flex items-center gap-3 text-sm leading-snug text-white/[.90]">
+            <span class="shrink-0 w-[34px] h-[34px] flex items-center justify-center rounded-xl" style="background:rgba(255,255,255,.14)">
+              <svg class="w-[15px] h-[15px]" style="stroke:rgba(255,255,255,.9)" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </span>
+            <span>Consultations sur rendez-vous au cabinet et à domicile</span>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-snug text-white/[.90]">
+            <span class="shrink-0 w-[34px] h-[34px] flex items-center justify-center rounded-xl" style="background:rgba(255,255,255,.14)">
+              <svg class="w-[15px] h-[15px]" style="stroke:rgba(255,255,255,.9)" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>Lotissement du Bois des Rois 76, 4500 Huy</span>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-snug text-white/[.90]">
+            <span class="shrink-0 w-[34px] h-[34px] flex items-center justify-center rounded-xl" style="background:rgba(255,255,255,.14)">
+              <svg class="w-[15px] h-[15px]" style="stroke:rgba(255,255,255,.9)" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>0479 84 75 46</span>
+          </li>
+          <li class="flex items-center gap-3 text-sm leading-snug text-white/[.90]">
+            <span class="shrink-0 w-[34px] h-[34px] flex items-center justify-center rounded-xl" style="background:rgba(255,255,255,.14)">
+              <svg class="w-[15px] h-[15px]" style="stroke:rgba(255,255,255,.9)" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <span>sophiedegee@hotmail.fr</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Wave -->
+    <div class="absolute bottom-0 left-0 right-0 z-10">
+      <svg viewBox="0 0 1440 72" preserveAspectRatio="none" class="w-full" style="height:72px;display:block" fill="#ffffff">
+        <path d="M0,36 C240,72 480,0 720,36 C960,72 1200,8 1440,36 L1440,72 L0,72 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ─── Stats strip ──────────────────────────────────── -->
+  <div class="bg-white border-b border-stone-100">
+    <div class="max-w-[1100px] mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+      <div class="fade-up">
+        <div class="flex items-center justify-center mb-1" style="height:3rem">
+          <div class="text-[2.4rem] font-black leading-none" style="background:linear-gradient(135deg,#3d8b5c,#d4a040);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+            <span data-target="14">0</span><span class="text-2xl" style="-webkit-text-fill-color:#d4a040">+</span>
+          </div>
+        </div>
+        <p class="text-xs font-bold tracking-widest uppercase text-[#b0a090]">Ans d'expérience</p>
+      </div>
+
+      <div class="fade-up delay-1">
+        <div class="flex items-center justify-center mb-1" style="height:3rem">
+          <div class="text-[2.4rem] font-black leading-none" style="background:linear-gradient(135deg,#3d8b5c,#d4a040);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+            <span data-target="11">0</span>
+          </div>
+        </div>
+        <p class="text-xs font-bold tracking-widest uppercase text-[#b0a090]">Formations continues</p>
+      </div>
+
+      <div class="fade-up delay-2">
+        <div class="flex items-center justify-center mb-1" style="height:3rem">
+          <div class="text-[2.4rem] font-black leading-none" style="background:linear-gradient(135deg,#3d8b5c,#d4a040);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+            <span data-target="10">0</span>
+          </div>
+        </div>
+        <p class="text-xs font-bold tracking-widest uppercase text-[#b0a090]">Ans de cabinet</p>
+      </div>
+
+      <div class="fade-up delay-3">
+        <div class="flex items-center justify-center mb-1" style="height:3rem">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="url(#g1)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3d8b5c"/><stop offset="100%" stop-color="#d4a040"/></linearGradient></defs>
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <p class="text-xs font-bold tracking-widest uppercase text-[#b0a090]">Soins à domicile</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─── Main ─────────────────────────────────────────── -->
+  <main>
+
+    <!-- Cabinet -->
+    <section id="cabinet" class="py-[100px] bg-white">
+      <div class="max-w-[1100px] mx-auto px-6">
+
+        <div class="text-center mb-14 fade-up">
+          <span class="section-label block text-[11px] font-extrabold tracking-[.16em] uppercase mb-2">Le cabinet</span>
+          <h2 class="gradient-text font-black mb-4" style="font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-0.02em">Présentation du cabinet</h2>
+          <div class="w-12 h-1 rounded-full mx-auto" style="background:linear-gradient(90deg,#52b077,#d4a040,#e8865a)"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-start">
+
+          <!-- Carousel -->
+          <div class="carousel relative rounded-[22px] overflow-hidden bg-stone-100 fade-up" style="aspect-ratio:4/3;box-shadow:0 6px 32px rgba(61,139,92,.12)">
+            <div class="flex h-full transition-transform duration-500 ease-[cubic-bezier(.4,0,.2,1)]" id="carouselTrack">
+              <div class="min-w-full h-full"><img src="./img/cabinet/1.jpg" alt="Cabinet – photo 1" class="w-full h-full object-cover"></div>
+              <div class="min-w-full h-full"><img src="./img/cabinet/2.jpg" alt="Cabinet – photo 2" class="w-full h-full object-cover"></div>
+              <div class="min-w-full h-full"><img src="./img/cabinet/3.jpg" alt="Cabinet – photo 3" class="w-full h-full object-cover"></div>
+            </div>
+            <button id="carouselPrev" aria-label="Précédent" class="carousel-btn absolute top-1/2 -translate-y-1/2 left-3 w-[38px] h-[38px] bg-white/90 border-0 rounded-full cursor-pointer flex items-center justify-center hover:bg-white hover:scale-105 transition-all" style="box-shadow:0 2px 8px rgba(61,139,92,.15)">
+              <svg class="w-[17px] h-[17px]" style="stroke:#3d8b5c" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button id="carouselNext" aria-label="Suivant" class="carousel-btn absolute top-1/2 -translate-y-1/2 right-3 w-[38px] h-[38px] bg-white/90 border-0 rounded-full cursor-pointer flex items-center justify-center hover:bg-white hover:scale-105 transition-all" style="box-shadow:0 2px 8px rgba(61,139,92,.15)">
+              <svg class="w-[17px] h-[17px]" style="stroke:#3d8b5c" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div id="carouselDots" class="absolute bottom-3.5 left-0 right-0 flex justify-center gap-[7px]">
+              <button class="carousel-dot w-[7px] h-[7px] rounded-full bg-white/45 border-0 p-0 cursor-pointer transition-all" aria-label="Photo 1"></button>
+              <button class="carousel-dot w-[7px] h-[7px] rounded-full bg-white/45 border-0 p-0 cursor-pointer transition-all" aria-label="Photo 2"></button>
+              <button class="carousel-dot w-[7px] h-[7px] rounded-full bg-white/45 border-0 p-0 cursor-pointer transition-all" aria-label="Photo 3"></button>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="fade-up delay-1 flex flex-col gap-4">
+            <p class="text-[0.95rem] leading-[1.85] text-[#7a6152]">Diplômée depuis juin 2012, j'ai débuté mon expérience de kinésithérapeute au sein du CNRF (Centre neurologique et de réadaptation fonctionnelle de Fraiture-en-Condroz) et dans un cabinet privé de la région Sprimontoise.</p>
+            <p class="text-[0.95rem] leading-[1.85] text-[#7a6152]">En 2016, j'inaugure mon propre cabinet libéral pour finalement, en 2018, quitter toute institution et y travailler à plein temps.</p>
+            <p class="text-[0.95rem] leading-[1.85] text-[#7a6152]">Le cabinet se veut familial et convivial — chaque patient est pris en charge individuellement, dans un cadre chaleureux et bienveillant.</p>
+            <p class="text-[0.95rem] leading-[1.85] text-[#7a6152]">J'apprécie me tenir informée de l'évolution des traitements et de leurs nouvelles perspectives ; je suis constamment en quête de nouvelles techniques.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Spécialités ──────────────────────────────────── -->
+    <section id="specialites" class="py-[100px]" style="background:#1e3528">
+      <div class="max-w-[1100px] mx-auto px-6">
+
+        <div class="text-center mb-14 fade-up">
+          <span class="block text-[11px] font-extrabold tracking-[.16em] uppercase mb-2" style="color:rgba(232,134,90,.8)">Expertise</span>
+          <h2 class="font-black mb-4" style="font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-0.02em;color:#ffffff">Nos spécialités</h2>
+          <div class="w-12 h-1 rounded-full mx-auto" style="background:linear-gradient(90deg,#52b077,#d4a040,#e8865a)"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- ATM -->
+          <div class="specialty-card fade-up">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:linear-gradient(135deg,rgba(232,134,90,.3),rgba(212,160,64,.15));border:1px solid rgba(232,134,90,.25)">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#e8865a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3C9 3 7 5 7 8v2c0 1.5-.5 3-2 4 1 1 2.5 1.5 4 1h6c1.5 0 3-.5 4-1-1.5-1-2-2.5-2-4V8c0-3-2-5-5-5z"/>
+                <path d="M9 17v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"/>
+                <line x1="9" y1="12" x2="15" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3">Rééducation ATM</h3>
+            <p class="text-sm leading-relaxed mb-5" style="color:rgba(255,255,255,.65)">Spécialiste de l'articulation temporo-mandibulaire et de la sphère oro-faciale, avec de nombreuses formations spécifiques allant de 2021 à 2025.</p>
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#e8865a"></span>Douleurs à la mâchoire
+              </li>
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#e8865a"></span>Bruxisme
+              </li>
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#e8865a"></span>Dysfonctions temporo-mandibulaires
+              </li>
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#e8865a"></span>Kinésithérapie cervico-maxillo-faciale
+              </li>
+            </ul>
+          </div>
+
+          <!-- Neurologie adulte -->
+          <div class="specialty-card fade-up delay-1">
+            <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:linear-gradient(135deg,rgba(61,139,92,.3),rgba(82,176,119,.15));border:1px solid rgba(82,176,119,.25)">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#52b077" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.5 2a2.5 2.5 0 0 1 2.45 2H12a2.5 2.5 0 1 1 2.5 2.5c.04.16.05.33.05.5a2.5 2.5 0 0 1-2.5 2.5 2.5 2.5 0 0 1-2.5-2.5c0-.17.01-.34.05-.5A2.5 2.5 0 0 1 9.5 2z"/>
+                <path d="M9.5 9.5v2m5-2v2M7 14.5A5 5 0 0 0 12 19a5 5 0 0 0 5-4.5"/>
+                <circle cx="12" cy="21" r="1"/>
+                <path d="M5 14.5h2m10 0h2"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3">Neurologie adulte</h3>
+            <p class="text-sm leading-relaxed mb-5" style="color:rgba(255,255,255,.65)">Prise en charge individualisée des patients présentant des pathologies neurologiques, avec une approche globale visant à maximiser la récupération fonctionnelle et l'autonomie.</p>
+            <ul class="flex flex-col gap-2">
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#52b077"></span>AVC &amp; hémiplégie
+              </li>
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#52b077"></span>Maladies neurodégénératives
+              </li>
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#52b077"></span>Traumatismes crâniens
+              </li>
+              <li class="flex items-center gap-2.5 text-sm" style="color:rgba(255,255,255,.75)">
+                <span class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#52b077"></span>Troubles de l'équilibre &amp; de la marche
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Formations -->
+    <section id="formations" class="py-[100px] bg-[#f7f4ef]">
+      <div class="max-w-[1100px] mx-auto px-6">
+
+        <div class="text-center mb-14 fade-up">
+          <span class="section-label block text-[11px] font-extrabold tracking-[.16em] uppercase mb-2">Parcours</span>
+          <h2 class="gradient-text font-black mb-4" style="font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-0.02em">Formations</h2>
+          <div class="w-12 h-1 rounded-full mx-auto" style="background:linear-gradient(90deg,#52b077,#d4a040,#e8865a)"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[18px]">
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#3d8b5c] hover:shadow-xl shadow-sm cursor-default" data-year="2025" style="--card-color:#3d8b5c;box-shadow:0 2px 12px rgba(61,139,92,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#3d8b5c] bg-[#edf7f1] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2025</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Bruxisme et ATM</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">Kineform</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#e8865a] hover:shadow-xl shadow-sm cursor-default" data-year="2024" style="--card-color:#e8865a;box-shadow:0 2px 12px rgba(232,134,90,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#e8865a] bg-[#fdf1ec] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2024</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Rééducation maxillo-faciale : dysfonctions temporo-mandibulaires et thérapie myofonctionnelle</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">KYMO / Thierry Gouzland</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#d4a040] hover:shadow-xl shadow-sm cursor-default" data-year="2023" style="--card-color:#d4a040;box-shadow:0 2px 12px rgba(212,160,64,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#d4a040] bg-[#fdf8e5] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2023</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Nouvelle approche rééducative des pathologies du complexe oro-facial et de l'ATM</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">SFER</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#7aab8a] hover:shadow-xl shadow-sm cursor-default" data-year="2022" style="--card-color:#7aab8a;box-shadow:0 2px 12px rgba(122,171,138,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#7aab8a] bg-[#f0f7f2] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2022</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Kinésithérapie cervico-maxillo-faciale</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">Forthema / Pitance Laurent</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#c4614a] hover:shadow-xl shadow-sm cursor-default" data-year="2021" style="--card-color:#c4614a;box-shadow:0 2px 12px rgba(196,97,74,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#c4614a] bg-[#fceae7] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2021</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Rééducation de l'articulation temporo-mandibulaire</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">ETMA</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#3d8b5c] hover:shadow-xl shadow-sm cursor-default" data-year="2017" style="--card-color:#3d8b5c;box-shadow:0 2px 12px rgba(61,139,92,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#3d8b5c] bg-[#edf7f1] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2017</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Rééducation du membre inférieur amputé</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">CREA-HELB</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#e8865a] hover:shadow-xl shadow-sm cursor-default" data-year="2017" style="--card-color:#e8865a;box-shadow:0 2px 12px rgba(232,134,90,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#e8865a] bg-[#fdf1ec] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2017</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Rééducation raisonnée de l'épaule</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">SOFCOK</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#d4a040] hover:shadow-xl shadow-sm cursor-default" data-year="2016" style="--card-color:#d4a040;box-shadow:0 2px 12px rgba(212,160,64,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#d4a040] bg-[#fdf8e5] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2014–2016</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Master universitaire en Neurologie Adulte</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">UCL</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#7aab8a] hover:shadow-xl shadow-sm cursor-default" data-year="2014" style="--card-color:#7aab8a;box-shadow:0 2px 12px rgba(122,171,138,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#7aab8a] bg-[#f0f7f2] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2014</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Prise en charge globale du patient hémiplégique</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">SFER</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#c4614a] hover:shadow-xl shadow-sm cursor-default" data-year="2014" style="--card-color:#c4614a;box-shadow:0 2px 12px rgba(196,97,74,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#c4614a] bg-[#fceae7] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2014</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Pratiques aquatiques des bébés</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">La Source</span>
+          </article>
+
+          <article class="formation-card group relative bg-white rounded-[22px] overflow-hidden p-[26px_22px_22px] border-t-4 border-[#3d8b5c] hover:shadow-xl shadow-sm cursor-default" data-year="2012" style="--card-color:#3d8b5c;box-shadow:0 2px 12px rgba(61,139,92,.08)">
+            <span class="inline-block text-[11px] font-extrabold tracking-[.09em] uppercase text-[#3d8b5c] bg-[#edf7f1] px-[10px] py-[3px] rounded-full mb-3 transition-transform duration-200 group-hover:scale-105">2008–2012</span>
+            <h3 class="text-[15px] font-bold text-[#25302a] leading-snug mb-3">Master en kinésithérapie</h3>
+            <span class="inline-block text-[12px] font-semibold text-[#7a6152] bg-[#f7f4ef] rounded-[8px] px-[10px] py-1">HEPL</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-[100px] bg-white">
+      <div class="max-w-[1100px] mx-auto px-6">
+
+        <div class="text-center mb-14 fade-up">
+          <span class="section-label block text-[11px] font-extrabold tracking-[.16em] uppercase mb-2">Venez nous voir</span>
+          <h2 class="gradient-text font-black mb-4" style="font-size:clamp(1.6rem,3vw,2.25rem);letter-spacing:-0.02em">Contact &amp; rendez-vous</h2>
+          <div class="w-12 h-1 rounded-full mx-auto" style="background:linear-gradient(90deg,#52b077,#d4a040,#e8865a)"></div>
+        </div>
+
+        <p class="max-w-[560px] mx-auto text-center text-[0.9rem] text-[#7a6152] leading-[1.8] px-7 py-5 rounded-[14px] mb-10 fade-up delay-1" style="background:#edf7f1;border-left:3px solid #52b077">
+          Prise de rendez-vous <strong class="text-[#3d8b5c]">UNIQUEMENT</strong> par téléphone. N'hésitez pas à laisser vos coordonnées sur la messagerie — je reprends contact dès que possible avec plaisir !
+        </p>
+
+        <!-- Contact cards -->
+        <div class="flex flex-col gap-5 mb-9 fade-up delay-2">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+            <div class="bg-white border border-stone-200 rounded-[22px] p-7 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-200" style="box-shadow:0 2px 12px rgba(61,139,92,.07)">
+              <div class="w-[52px] h-[52px] rounded-[16px] flex items-center justify-center mx-auto mb-4" style="background:linear-gradient(135deg,#edf7f1,#fdf1ec)">
+                <svg class="w-[22px] h-[22px] stroke-[#3d8b5c]" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <h3 class="text-[11px] font-bold tracking-[.08em] uppercase text-[#b0a090] mb-2.5">Par téléphone</h3>
+              <a href="tel:+32479847546" class="block text-[1.05rem] font-bold text-[#3d8b5c] mb-2 hover:text-[#52b077] transition-colors">0479 84 75 46</a>
+              <p class="text-[0.78rem] text-[#b0a090] leading-relaxed">Joignable du lundi au vendredi de 9h à 18h et le mercredi de 9h à 12h</p>
+            </div>
+
+            <div class="bg-white border border-stone-200 rounded-[22px] p-7 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-200" style="box-shadow:0 2px 12px rgba(61,139,92,.07)">
+              <div class="w-[52px] h-[52px] rounded-[16px] flex items-center justify-center mx-auto mb-4" style="background:linear-gradient(135deg,#edf7f1,#fdf1ec)">
+                <svg class="w-[22px] h-[22px] stroke-[#3d8b5c]" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3 class="text-[11px] font-bold tracking-[.08em] uppercase text-[#b0a090] mb-2.5">Adresse</h3>
+              <p class="text-[0.85rem] text-[#25302a] font-semibold leading-relaxed">Lotissement du Bois des Rois 76<br>4500 Huy (Ben-Ahin)</p>
+            </div>
+
+          </div>
+
+          <!-- Google Maps -->
+          <div class="rounded-[22px] overflow-hidden" style="height:280px;box-shadow:0 4px 24px rgba(61,139,92,.10)">
+            <iframe
+              src="https://maps.google.com/maps?q=Lotissement+du+Bois+des+Rois+76,+Ben-Ahin,+4500+Huy,+Belgique&output=embed&hl=fr"
+              width="100%" height="100%" style="border:0;display:block"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Localisation du cabinet de Degée Sophie">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ───────────────────────────────────────── -->
+  <footer class="py-11 text-center" style="background:#1e3528">
+    <p class="text-sm font-bold mb-1" style="color:rgba(255,255,255,.75)">Degée Sophie · Kinésithérapeute</p>
+    <p class="text-xs" style="color:rgba(255,255,255,.38)">© 2026 · Tous droits réservés</p>
+  </footer>
+
+  <!-- ─── Floating call button (mobile) ───────────────── -->
+  <a href="tel:+32479847546" class="floating-call items-center gap-2 text-white text-sm font-bold px-5 py-3.5 rounded-full shadow-xl transition-all active:scale-95"
+     style="background:linear-gradient(135deg,#52b077,#d4a040);box-shadow:0 4px 20px rgba(61,139,92,.45)"
+     aria-label="Appeler le cabinet">
+    <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.4 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Appeler
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

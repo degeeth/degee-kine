@@ -13,7 +13,8 @@ degee-kine/
 ├── tailwind/         # v4 — même direction que v2, built with Tailwind CSS
 ├── tailwind-v2/      # v5 — version Tailwind hyper familiale (Nunito, tons chauds vert/pêche)
 ├── tailwind-v3/      # v6 — tailwind-v2 + Google Maps + SEO meta tags
-└── tailwind-v4/      # v7 — tailwind-v3 + spécialités + FAQ + compteurs + swipe + bouton mobile + horaires + Schema.org
+├── tailwind-v4/      # v7 — tailwind-v3 + spécialités + FAQ + compteurs + swipe + bouton mobile + horaires + Schema.org
+└── tailwind-v5/      # v8 — version retenue par la cliente : tailwind-v4 affinée (voir ci-dessous)
 ```
 
 Chaque version est un site statique autonome, aucune étape de build requise.  
@@ -85,6 +86,15 @@ Version enrichie basée sur tailwind-v3, avec 7 améliorations.
 - **Lien skip-to-content** : accessibilité clavier (`sr-only`, visible au focus)
 - **Deuxième CTA hero** : bouton secondaire « Nos spécialités » aux côtés de « Prendre rendez-vous »
 - Lien « Spécialités » ajouté dans la navbar
+
+### tailwind-v5
+**Version retenue par la cliente**, basée sur tailwind-v4 avec les ajustements demandés par email.
+
+- Hero : ordre des spécialités inversé — « Rééducation ATM & neurologie adulte »
+- Texte de présentation du cabinet reformulé (installation en 2016, temps plein dès 2018)
+- **Section FAQ retirée** (section et lien de navbar)
+- **Section Spécialités** : cartes ATM et Neurologie adulte inversées (ATM à gauche) ; « Rééducation du membre inférieur amputé » retirée de la liste neurologie (hors-sujet neuro) ; « Bruxisme » sans la précision « grincement des dents » ; « Thérapie myofonctionnelle » retirée de la liste ATM
+- **Contact** : carte email retirée, horaires d'ouverture détaillées retirées ; sous le numéro de téléphone, mention « Joignable du lundi au vendredi de 9h à 12h et le mercredi de 9h à 12h » ; mention « Soins à domicile possibles… » retirée
 
 ## Contenu
 
