@@ -15,8 +15,11 @@ degee-kine/
 ├── tailwind/      # v4 — vanilla-v2 réimplémenté en Tailwind CDN
 ├── tailwind-v2/   # v5 — hyper familiale : Nunito, palette chaude vert/pêche/doré
 ├── tailwind-v3/   # v6 — tailwind-v2 + Google Maps + SEO / Open Graph
-└── tailwind-v4/   # v7 — tailwind-v3 + Spécialités + FAQ + compteurs + swipe mobile + Schema.org
+├── tailwind-v4/   # v7 — tailwind-v3 + Spécialités + FAQ + compteurs + swipe mobile + Schema.org
+└── tailwind-v5/   # v8 — version retenue, tailwind-v4 affinée — RACINE DU SITE PUBLIÉ
 ```
+
+**Déploiement** : `tailwind-v5/` est la racine du site en production. Les fichiers de racine (`favicon.ico`, `robots.txt`, `sitemap.xml`…) vont dans ce dossier.
 
 Chaque version est autonome, aucun build requis — ouvrir `index.html` suffit.
 

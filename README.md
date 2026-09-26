@@ -88,7 +88,7 @@ Version enrichie basée sur tailwind-v3, avec 7 améliorations.
 - Lien « Spécialités » ajouté dans la navbar
 
 ### tailwind-v5
-**Version retenue par la cliente**, basée sur tailwind-v4 avec les ajustements demandés par email.
+**Version retenue par la cliente**, basée sur tailwind-v4 avec les ajustements demandés par email. **Ce dossier est la racine du site publié.**
 
 - Hero : ordre des spécialités inversé — « Rééducation ATM & neurologie adulte »
 - Texte de présentation du cabinet reformulé (installation en 2016, temps plein dès 2018)
